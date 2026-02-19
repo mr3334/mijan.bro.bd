@@ -3,187 +3,294 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mijan • Portfolio</title>
-  <meta name="description" content="Mijan's first website — portfolio and projects." />
+  <title>Mijan Growth • Social Media Services</title>
+  <meta name="description" content="Social media growth services with fast delivery, simple checkout, and 24/7 support." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Top glow background -->
-  <div class="bg-glow"></div>
+  <!-- Top notice -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="dot"></span>
+      <span><b>NEW:</b> Premium Video Views now available</span>
+      <a class="topbar-link" href="#services">See services</a>
+    </div>
+  </div>
 
   <!-- Navbar -->
   <header class="nav">
-    <a class="brand" href="#home">
-      <span class="brand-dot"></span>
-      <span>Mijan</span>
-    </a>
+    <div class="container nav-inner">
+      <a class="brand" href="#home" aria-label="Go home">
+        <span class="brand-badge">M</span>
+        <span class="brand-name">Mijan Growth</span>
+      </a>
 
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+      <button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a class="pill" href="#contact">Hire me</a>
-    </nav>
+      <nav class="links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#why">Why us</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="#services">Get Started</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero -->
   <main id="home" class="container hero">
     <div class="hero-left">
-      <div class="badge">🚀 Welcome to mijan.bro.bd</div>
+      <div class="rating">
+        <span class="stars">★★★★★</span>
+        <span class="muted">Trusted by creators & businesses</span>
+      </div>
 
       <h1>
-        I build simple, clean websites
-        <span class="grad">that look premium</span>.
+        Grow your social presence with
+        <span class="grad">smart, clean promotion</span>.
       </h1>
 
-      <p class="sub">
-        This is my first website. I’m learning web development and building projects every week.
+      <p class="lead">
+        Choose a platform, pick a package, and submit your link.
+        Built for speed, simplicity, and mobile-friendly checkout.
       </p>
 
       <div class="cta">
-        <a class="btn primary" href="#projects">See Projects</a>
-        <a class="btn ghost" href="#contact">Contact</a>
+        <a class="btn primary" href="#services">Browse Packages</a>
+        <a class="btn ghost" href="#contact">Talk to support</a>
       </div>
 
-      <div class="stats">
-        <div class="stat">
-          <div class="stat-num" id="statProjects">0</div>
-          <div class="stat-label">Projects</div>
+      <div class="trust-row">
+        <div class="trust">
+          <div class="trust-num">4.9</div>
+          <div class="trust-label">avg rating</div>
         </div>
-        <div class="stat">
-          <div class="stat-num" id="statDays">0</div>
-          <div class="stat-label">Days Learning</div>
+        <div class="trust">
+          <div class="trust-num">10k+</div>
+          <div class="trust-label">orders served</div>
         </div>
-        <div class="stat">
-          <div class="stat-num" id="statCoffee">0</div>
-          <div class="stat-label">Coffee</div>
+        <div class="trust">
+          <div class="trust-num">24/7</div>
+          <div class="trust-label">support</div>
         </div>
       </div>
     </div>
 
     <div class="hero-right">
-      <div class="card glow">
-        <div class="card-top">
-          <div class="avatar">M</div>
-          <div>
-            <div class="card-title">Mijan Website</div>
-            <div class="card-sub">Fast • Responsive • Clean UI</div>
+      <div class="glass-card">
+        <div class="glass-title">Quick Order</div>
+        <div class="tabs" role="tablist" aria-label="Platform tabs">
+          <button class="tab active" data-tab="ig" role="tab" aria-selected="true">Instagram</button>
+          <button class="tab" data-tab="tt" role="tab" aria-selected="false">TikTok</button>
+          <button class="tab" data-tab="yt" role="tab" aria-selected="false">YouTube</button>
+        </div>
+
+        <div class="tab-panels">
+          <div class="panel active" id="ig" role="tabpanel">
+            <div class="grid">
+              <a class="mini-card" href="#services" data-preset="Instagram • Followers">
+                <div class="mini-h">Followers</div>
+                <div class="mini-p">Packages from small to large</div>
+              </a>
+              <a class="mini-card" href="#services" data-preset="Instagram • Likes">
+                <div class="mini-h">Likes</div>
+                <div class="mini-p">Boost engagement on posts</div>
+              </a>
+              <a class="mini-card" href="#services" data-preset="Instagram • Views">
+                <div class="mini-h">Views</div>
+                <div class="mini-p">Video views for reels</div>
+              </a>
+              <a class="mini-card" href="#services" data-preset="Instagram • Comments">
+                <div class="mini-h">Comments</div>
+                <div class="mini-p">Add activity to content</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="panel" id="tt" role="tabpanel">
+            <div class="grid">
+              <a class="mini-card" href="#services" data-preset="TikTok • Followers">
+                <div class="mini-h">Followers</div>
+                <div class="mini-p">Build social proof fast</div>
+              </a>
+              <a class="mini-card" href="#services" data-preset="TikTok • Likes">
+                <div class="mini-h">Likes</div>
+                <div class="mini-p">Improve content traction</div>
+              </a>
+              <a class="mini-card" href="#services" data-preset="TikTok • Views">
+                <div class="mini-h">Views</div>
+                <div class="mini-p">Push videos further</div>
+              </a>
+              <a class="mini-card" href="#contact">
+                <div class="mini-h">Custom</div>
+                <div class="mini-p">Need something special?</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="panel" id="yt" role="tabpanel">
+            <div class="grid">
+              <a class="mini-card" href="#services" data-preset="YouTube • Views">
+                <div class="mini-h">Views</div>
+                <div class="mini-p">Get more watch signals</div>
+              </a>
+              <a class="mini-card" href="#services" data-preset="YouTube • Likes">
+                <div class="mini-h">Likes</div>
+                <div class="mini-p">Increase engagement ratio</div>
+              </a>
+              <a class="mini-card" href="#services" data-preset="YouTube • Subscribers">
+                <div class="mini-h">Subscribers</div>
+                <div class="mini-p">Grow channel audience</div>
+              </a>
+              <a class="mini-card" href="#contact">
+                <div class="mini-h">Consult</div>
+                <div class="mini-p">We’ll recommend a plan</div>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="mini-grid">
-          <div class="mini">
-            <div class="mini-title">Speed</div>
-            <div class="mini-value">A+</div>
-          </div>
-          <div class="mini">
-            <div class="mini-title">Mobile</div>
-            <div class="mini-value">Perfect</div>
-          </div>
-          <div class="mini">
-            <div class="mini-title">Style</div>
-            <div class="mini-value">Modern</div>
-          </div>
-          <div class="mini">
-            <div class="mini-title">Code</div>
-            <div class="mini-value">Clean</div>
-          </div>
+        <div class="ticker" aria-label="Live activity">
+          <div class="ticker-track" id="tickerTrack"></div>
         </div>
 
-        <div class="card-bottom">
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">JS</span>
-          <span class="chip">GitHub Pages</span>
+        <div class="small muted">
+          Tip: Use official promotion & quality content for long-term growth.
         </div>
       </div>
     </div>
   </main>
 
-  <!-- About -->
-  <section id="about" class="container section">
+  <!-- Services -->
+  <section id="services" class="container section">
     <div class="section-head">
-      <h2>About me</h2>
-      <p>Short intro — তুমি চাইলে পরে নিজের মতো edit করবে।</p>
+      <h2>Popular Packages</h2>
+      <p class="muted">Edit names & prices to match your service. Buttons are demo checkout.</p>
     </div>
 
-    <div class="grid-2">
-      <div class="panel">
-        <h3>Who I am</h3>
-        <p>
-          I’m <b>Mijan</b>. I like building websites, learning tech, and making cool projects.
-          My goal is to improve every day and build real-world skills.
-        </p>
+    <div class="cards">
+      <article class="card">
+        <div class="card-top">
+          <div>
+            <div class="card-title">Instagram Followers</div>
+            <div class="muted small">Starter boost for profiles</div>
+          </div>
+          <span class="badge">Best seller</span>
+        </div>
+        <div class="price">
+          <span class="money">$</span><span class="amount">0.39</span><span class="per">/ starts</span>
+        </div>
         <ul class="list">
-          <li>✅ Responsive websites (mobile friendly)</li>
-          <li>✅ Clean UI design</li>
-          <li>✅ GitHub Pages deployment</li>
+          <li>Simple link submission</li>
+          <li>Fast delivery window</li>
+          <li>Secure checkout</li>
         </ul>
+        <button class="btn primary full" data-checkout="Instagram Followers">Buy now</button>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <div>
+            <div class="card-title">Instagram Likes</div>
+            <div class="muted small">For posts & reels engagement</div>
+          </div>
+          <span class="badge ghost">Popular</span>
+        </div>
+        <div class="price">
+          <span class="money">$</span><span class="amount">0.59</span><span class="per">/ starts</span>
+        </div>
+        <ul class="list">
+          <li>Works great on new posts</li>
+          <li>Multiple package sizes</li>
+          <li>Instant support</li>
+        </ul>
+        <button class="btn primary full" data-checkout="Instagram Likes">Buy now</button>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <div>
+            <div class="card-title">TikTok Views</div>
+            <div class="muted small">Push video visibility</div>
+          </div>
+          <span class="badge ghost">NEW</span>
+        </div>
+        <div class="price">
+          <span class="money">$</span><span class="amount">0.79</span><span class="per">/ starts</span>
+        </div>
+        <ul class="list">
+          <li>Quick delivery window</li>
+          <li>Great for testing content</li>
+          <li>Mobile-friendly checkout</li>
+        </ul>
+        <button class="btn primary full" data-checkout="TikTok Views">Buy now</button>
+      </article>
+    </div>
+
+    <div class="note">
+      ⚠️ Important: Don’t promise “guaranteed real users” unless you can truly verify it.
+      Keep messaging honest + compliant.
+    </div>
+  </section>
+
+  <!-- Why us -->
+  <section id="why" class="container section">
+    <div class="section-head">
+      <h2>Why choose us</h2>
+      <p class="muted">Same structure vibe—different wording & original design.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="icon">⚡</div>
+        <h3>Fast delivery</h3>
+        <p class="muted">Most orders start quickly after confirmation. ETA depends on package size.</p>
       </div>
-
-      <div class="panel">
-        <h3>Skills</h3>
-        <div class="skills">
-          <span class="skill">HTML</span>
-          <span class="skill">CSS</span>
-          <span class="skill">JavaScript</span>
-          <span class="skill">GitHub</span>
-          <span class="skill">Domain + DNS</span>
-          <span class="skill">Basic UI</span>
-        </div>
-
-        <div class="note">
-          Tip: About/Projects section এ real info দিলে website আরও pro লাগবে।
-        </div>
+      <div class="why-card">
+        <div class="icon">🔒</div>
+        <h3>Secure checkout</h3>
+        <p class="muted">We keep checkout simple. Never ask for passwords.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">💬</div>
+        <h3>Support that replies</h3>
+        <p class="muted">Questions? We answer. Add your WhatsApp/Email in Contact section.</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">📈</div>
+        <h3>Growth strategy</h3>
+        <p class="muted">We encourage quality content + smart promotion for long-term results.</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="container section">
+  <!-- FAQ -->
+  <section id="faq" class="container section">
     <div class="section-head">
-      <h2>Projects</h2>
-      <p>এখানে তুমি ২-৩টা project লিংক দিবে (GitHub / Demo)।</p>
+      <h2>FAQ</h2>
+      <p class="muted">You can edit questions anytime.</p>
     </div>
 
-    <div class="projects">
-      <a class="project" href="#" target="_blank" rel="noreferrer">
-        <div class="project-top">
-          <div class="project-title">My First Website</div>
-          <div class="project-tag">Live</div>
-        </div>
-        <p class="project-desc">Simple landing page hosted on GitHub Pages with custom domain.</p>
-        <div class="project-bottom">
-          <span class="chip">HTML</span><span class="chip">CSS</span>
-        </div>
-      </a>
-
-      <a class="project" href="#" target="_blank" rel="noreferrer">
-        <div class="project-top">
-          <div class="project-title">Project #2</div>
-          <div class="project-tag ghost">Soon</div>
-        </div>
-        <p class="project-desc">Add your next project here. Example: calculator / gallery / blog.</p>
-        <div class="project-bottom">
-          <span class="chip">JS</span><span class="chip">UI</span>
-        </div>
-      </a>
-
-      <a class="project" href="#" target="_blank" rel="noreferrer">
-        <div class="project-top">
-          <div class="project-title">Project #3</div>
-          <div class="project-tag ghost">Soon</div>
-        </div>
-        <p class="project-desc">Portfolio upgrade, contact form, animations, and more.</p>
-        <div class="project-bottom">
-          <span class="chip">Design</span><span class="chip">Responsive</span>
-        </div>
-      </a>
+    <div class="faq">
+      <details>
+        <summary>How do I place an order?</summary>
+        <div class="muted">Pick a package → click Buy now → enter your public link → confirm.</div>
+      </details>
+      <details>
+        <summary>Do you need my password?</summary>
+        <div class="muted">No. Never share passwords. Only a public profile/post/video link.</div>
+      </details>
+      <details>
+        <summary>How fast is delivery?</summary>
+        <div class="muted">Depends on package size. Small orders typically begin faster.</div>
+      </details>
+      <details>
+        <summary>Can I get a refund?</summary>
+        <div class="muted">Add your real policy here (refund, replace, partial, etc.).</div>
+      </details>
     </div>
   </section>
 
@@ -191,49 +298,76 @@
   <section id="contact" class="container section">
     <div class="section-head">
       <h2>Contact</h2>
-      <p>তোমার email/FB/WhatsApp link বসিয়ে দাও।</p>
+      <p class="muted">Connect your email/WhatsApp. Form opens email app (no backend).</p>
     </div>
 
-    <div class="grid-2">
-      <div class="panel">
+    <div class="contact-grid">
+      <div class="contact-card">
         <h3>Send a message</h3>
-        <form class="form" id="contactForm">
+        <form id="contactForm" class="form">
           <label>
             Name
-            <input type="text" id="name" placeholder="Your name" required />
+            <input id="name" type="text" placeholder="Your name" required />
           </label>
-
           <label>
             Message
             <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
           </label>
-
-          <button type="submit" class="btn primary">Send</button>
-          <div class="small" id="formHint">This opens your email app (no server needed).</div>
+          <button class="btn primary full" type="submit">Send</button>
+          <div class="muted small">No server needed. This opens your email app.</div>
         </form>
       </div>
 
-      <div class="panel">
-        <h3>Links</h3>
-        <div class="links">
-          <a class="link" href="https://github.com/mr3334" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="link" href="#" target="_blank" rel="noreferrer">Facebook</a>
-          <a class="link" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
-        </div>
+      <div class="contact-card">
+        <h3>Quick links</h3>
+        <a class="link" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="link" href="#" target="_blank" rel="noreferrer">Facebook Page</a>
+        <a class="link" href="#" target="_blank" rel="noreferrer">Support Email</a>
 
-        <div class="footer-card">
-          <div class="footer-title">mijan.bro.bd</div>
-          <div class="footer-sub">Built with ❤️ on GitHub Pages</div>
+        <div class="brand-box">
+          <div class="brand-box-title">mijan.bro.bd</div>
+          <div class="muted small">Built on GitHub Pages</div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="container footer">
-    <span>© <span id="year"></span> Mijan. All rights reserved.</span>
-    <a href="#home" class="to-top">Back to top ↑</a>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="muted">© <span id="year"></span> Mijan Growth</span>
+      <a class="backtop" href="#home">Back to top ↑</a>
+    </div>
   </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Checkout">
+      <div class="modal-top">
+        <div>
+          <div class="modal-title" id="modalTitle">Checkout</div>
+          <div class="muted small">Demo checkout (no payment).</div>
+        </div>
+        <button class="x" id="closeModal" aria-label="Close">✕</button>
+      </div>
+
+      <form id="checkoutForm" class="form">
+        <label>
+          Link (profile/post/video)
+          <input id="orderLink" type="url" placeholder="https://..." required />
+        </label>
+        <label>
+          Package size
+          <select id="orderSize">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+          </select>
+        </label>
+        <button class="btn primary full" type="submit">Confirm order</button>
+        <div class="muted small" id="orderHint"></div>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
-    </html>
+</html>
