@@ -1,11 +1,239 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mijan Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mijan • Portfolio</title>
+  <meta name="description" content="Mijan's first website — portfolio and projects." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Welcome to mijan.bro.bd 🚀</h1>
-  <p>This is my first website</p>
+  <!-- Top glow background -->
+  <div class="bg-glow"></div>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <a class="brand" href="#home">
+      <span class="brand-dot"></span>
+      <span>Mijan</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="pill" href="#contact">Hire me</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="container hero">
+    <div class="hero-left">
+      <div class="badge">🚀 Welcome to mijan.bro.bd</div>
+
+      <h1>
+        I build simple, clean websites
+        <span class="grad">that look premium</span>.
+      </h1>
+
+      <p class="sub">
+        This is my first website. I’m learning web development and building projects every week.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="#projects">See Projects</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num" id="statProjects">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="statDays">0</div>
+          <div class="stat-label">Days Learning</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="statCoffee">0</div>
+          <div class="stat-label">Coffee</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="card glow">
+        <div class="card-top">
+          <div class="avatar">M</div>
+          <div>
+            <div class="card-title">Mijan Website</div>
+            <div class="card-sub">Fast • Responsive • Clean UI</div>
+          </div>
+        </div>
+
+        <div class="mini-grid">
+          <div class="mini">
+            <div class="mini-title">Speed</div>
+            <div class="mini-value">A+</div>
+          </div>
+          <div class="mini">
+            <div class="mini-title">Mobile</div>
+            <div class="mini-value">Perfect</div>
+          </div>
+          <div class="mini">
+            <div class="mini-title">Style</div>
+            <div class="mini-value">Modern</div>
+          </div>
+          <div class="mini">
+            <div class="mini-title">Code</div>
+            <div class="mini-value">Clean</div>
+          </div>
+        </div>
+
+        <div class="card-bottom">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JS</span>
+          <span class="chip">GitHub Pages</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="container section">
+    <div class="section-head">
+      <h2>About me</h2>
+      <p>Short intro — তুমি চাইলে পরে নিজের মতো edit করবে।</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h3>Who I am</h3>
+        <p>
+          I’m <b>Mijan</b>. I like building websites, learning tech, and making cool projects.
+          My goal is to improve every day and build real-world skills.
+        </p>
+        <ul class="list">
+          <li>✅ Responsive websites (mobile friendly)</li>
+          <li>✅ Clean UI design</li>
+          <li>✅ GitHub Pages deployment</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>Skills</h3>
+        <div class="skills">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">GitHub</span>
+          <span class="skill">Domain + DNS</span>
+          <span class="skill">Basic UI</span>
+        </div>
+
+        <div class="note">
+          Tip: About/Projects section এ real info দিলে website আরও pro লাগবে।
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container section">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p>এখানে তুমি ২-৩টা project লিংক দিবে (GitHub / Demo)।</p>
+    </div>
+
+    <div class="projects">
+      <a class="project" href="#" target="_blank" rel="noreferrer">
+        <div class="project-top">
+          <div class="project-title">My First Website</div>
+          <div class="project-tag">Live</div>
+        </div>
+        <p class="project-desc">Simple landing page hosted on GitHub Pages with custom domain.</p>
+        <div class="project-bottom">
+          <span class="chip">HTML</span><span class="chip">CSS</span>
+        </div>
+      </a>
+
+      <a class="project" href="#" target="_blank" rel="noreferrer">
+        <div class="project-top">
+          <div class="project-title">Project #2</div>
+          <div class="project-tag ghost">Soon</div>
+        </div>
+        <p class="project-desc">Add your next project here. Example: calculator / gallery / blog.</p>
+        <div class="project-bottom">
+          <span class="chip">JS</span><span class="chip">UI</span>
+        </div>
+      </a>
+
+      <a class="project" href="#" target="_blank" rel="noreferrer">
+        <div class="project-top">
+          <div class="project-title">Project #3</div>
+          <div class="project-tag ghost">Soon</div>
+        </div>
+        <p class="project-desc">Portfolio upgrade, contact form, animations, and more.</p>
+        <div class="project-bottom">
+          <span class="chip">Design</span><span class="chip">Responsive</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container section">
+    <div class="section-head">
+      <h2>Contact</h2>
+      <p>তোমার email/FB/WhatsApp link বসিয়ে দাও।</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h3>Send a message</h3>
+        <form class="form" id="contactForm">
+          <label>
+            Name
+            <input type="text" id="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Message
+            <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+          </label>
+
+          <button type="submit" class="btn primary">Send</button>
+          <div class="small" id="formHint">This opens your email app (no server needed).</div>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h3>Links</h3>
+        <div class="links">
+          <a class="link" href="https://github.com/mr3334" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="link" href="#" target="_blank" rel="noreferrer">Facebook</a>
+          <a class="link" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+
+        <div class="footer-card">
+          <div class="footer-title">mijan.bro.bd</div>
+          <div class="footer-sub">Built with ❤️ on GitHub Pages</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <span>© <span id="year"></span> Mijan. All rights reserved.</span>
+    <a href="#home" class="to-top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>
+    </html>
