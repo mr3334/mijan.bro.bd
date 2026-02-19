@@ -1,40 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mijan Growth • Social Media Services</title>
-  <meta name="description" content="Social media growth services with fast delivery, simple checkout, and 24/7 support." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mijan Services • Social Growth</title>
+  <meta name="description" content="Professional social media services. Simple, fast, secure checkout." />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- Top notice -->
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <span class="dot"></span>
-      <span><b>NEW:</b> Premium Video Views now available</span>
-      <a class="topbar-link" href="#services">See services</a>
-    </div>
-  </div>
-
-  <!-- Navbar -->
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#home" aria-label="Go home">
-        <span class="brand-badge">M</span>
-        <span class="brand-name">Mijan Growth</span>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">Mijan Services</span>
       </a>
 
-      <button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#why">Why us</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
+      <nav class="menu" id="menu">
+        <a class="active" href="index.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a class="pill" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="tag">Green • Clean • Professional</div>
+        <h1>Services that help your content get noticed.</h1>
+        <p class="sub">
+          Choose a platform, pick a package, and submit your public link.
+          No passwords. Simple checkout. Mobile-friendly.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn primary" data-open-order data-service="Instagram Followers">Quick Order</button>
+          <a class="btn ghost" href="contact.html">Talk to Support</a>
+        </div>
+
+        <div class="mini-stats">
+          <div class="mini-stat"><b>Fast</b><span>delivery</span></div>
+          <div class="mini-stat"><b>Secure</b><span>checkout</span></div>
+          <div class="mini-stat"><b>24/7</b><span>support</span></div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <div class="hero-card-title">Most Popular</div>
+          <div class="hero-card-badge">Trusted</div>
+        </div>
+
+        <div class="hero-card-grid">
+          <button class="service-chip" data-open-order data-service="Instagram Followers">Instagram • Followers</button>
+          <button class="service-chip" data-open-order data-service="Instagram Likes">Instagram • Likes</button>
+          <button class="service-chip" data-open-order data-service="TikTok Views">TikTok • Views</button>
+          <button class="service-chip" data-open-order data-service="YouTube Views">YouTube • Views</button>
+        </div>
+
+        <p class="small muted">
+          Tip: Long-term growth comes from good content + consistent posting.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Instagram</h2>
+        <p class="muted">Pick a package. Edit prices later.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Followers</h3>
+          <p class="muted">For profile social proof.</p>
+          <div class="price"><span>$</span><b>0.39</b><span class="muted">starting</span></div>
+          <ul class="list">
+            <li>Public link only</li>
+            <li>Mobile-friendly</li>
+            <li>Support available</li>
+          </ul>
+          <button class="btn primary full" data-open-order data-service="Instagram Followers">Order</button>
+        </article>
+
+        <article class="card">
+          <h3>Likes</h3>
+          <p class="muted">Boost engagement on posts.</p>
+          <div class="price"><span>$</span><b>0.59</b><span class="muted">starting</span></div>
+          <ul class="list">
+            <li>Works on posts/reels</li>
+            <li>Multiple sizes</li>
+            <li>No password needed</li>
+          </ul>
+          <button class="btn primary full" data-open-order data-service="Instagram Likes">Order</button>
+        </article>
+
+        <article class="card">
+          <h3>Views</h3>
+          <p class="muted">For reels/video reach.</p>
+          <div class="price"><span>$</span><b>0.79</b><span class="muted">starting</span></div>
+          <ul class="list">
+            <li>Fast start</li>
+            <li>Great for testing</li>
+            <li>Simple checkout</li>
+          </ul>
+          <button class="btn primary full" data-open-order data-service="Instagram Views">Order</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>TikTok</h2>
+        <p class="muted">Clean packages for creators.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Views</h3>
+          <p class="muted">Push visibility for videos.</p>
+          <div class="price"><span>$</span><b>0.49</b><span class="muted">starting</span></div>
+          <button class="btn primary full" data-open-order data-service="TikTok Views">Order</button>
+        </article>
+
+        <article class="card">
+          <h3>Likes</h3>
+          <p class="muted">Improve engagement ratio.</p>
+          <div class="price"><span>$</span><b>0.69</b><span class="muted">starting</span></div>
+          <button class="btn primary full" data-open-order data-service="TikTok Likes">Order</button>
+        </article>
+
+        <article class="card">
+          <h3>Followers</h3>
+          <p class="muted">Grow profile credibility.</p>
+          <div class="price"><span>$</span><b>0.89</b><span class="muted">starting</span></div>
+          <button class="btn primary full" data-open-order data-service="TikTok Followers">Order</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>YouTube</h2>
+        <p class="muted">For channel & video performance.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Views</h3>
+          <p class="muted">Support videos with more views.</p>
+          <div class="price"><span>$</span><b>0.59</b><span class="muted">starting</span></div>
+          <button class="btn primary full" data-open-order data-service="YouTube Views">Order</button>
+        </article>
+
+        <article class="card">
+          <h3>Likes</h3>
+          <p class="muted">Increase engagement signals.</p>
+          <div class="price"><span>$</span><b>0.79</b><span class="muted">starting</span></div>
+          <button class="btn primary full" data-open-order data-service="YouTube Likes">Order</button>
+        </article>
+
+        <article class="card">
+          <h3>Subscribers</h3>
+          <p class="muted">Grow channel audience.</p>
+          <div class="price"><span>$</span><b>0.99</b><span class="muted">starting</span></div>
+          <button class="btn primary full" data-open-order data-service="YouTube Subscribers">Order</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="muted">© <span id="year"></span> Mijan Services</span>
+      <div class="footer-links">
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Order Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Order form">
+      <div class="modal-top">
+        <div>
+          <div class="modal-title" id="modalTitle">Order</div>
+          <div class="small muted">Demo form (no payment). You can connect payment later.</div>
+        </div>
+        <button class="x" id="closeModal" aria-label="Close">✕</button>
+      </div>
+
+      <form id="orderForm" class="form">
+        <label>
+          Selected service
+          <input id="serviceName" type="text" readonly />
+        </label>
+
+        <label>
+          Public link (profile/post/video)
+          <input id="orderLink" type="url" placeholder="https://..." required />
+        </label>
+
+        <label>
+          Package size
+          <select id="orderSize">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+          </select>
+        </label>
+
+        <button class="btn primary full" type="submit">Confirm</button>
+        <div class="small muted" id="orderHint"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+            </html>        <a href="#contact">Contact</a>
         <a class="pill" href="#services">Get Started</a>
       </nav>
     </div>
