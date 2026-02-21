@@ -1,0 +1,18 @@
+title: "Mijan's Blog"
+description: "My photos, memories, blogs, and favorite links."
+theme: minima
+
+# Optional: show future dated posts? keep false
+future: false
+
+# Your site URL (optional now)
+# url: "https://mijan.bro.bd"
+
+minima:
+  social_links:
+    - { platform: github,  user_url: "https://github.com/mr3334" }
+
+header_pages:
+  - about.md
+  - gallery.md
+  - news.md
