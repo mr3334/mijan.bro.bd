@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mijan Panel • Orders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">M</span><span class="brand-name">mijanpanel.com</span></a>
+      <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Dashboard</a>
+        <a class="active" href="orders.html">Orders</a>
+        <a href="add-funds.html">Add Funds</a>
+        <a class="pill" href="add-funds.html">Deposit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="card">
+      <div class="order-head">
+        <h2>Orders</h2>
+        <p class="muted small">This is a UI template. Later you can connect backend to show real orders.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Service</th>
+              <th>Quantity</th>
+              <th>Charge</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTable">
+            <tr>
+              <td>#10021</td>
+              <td>Instagram Followers</td>
+              <td>1000</td>
+              <td>৳264.03</td>
+              <td><span class="tag ok">Completed</span></td>
+            </tr>
+            <tr>
+              <td>#10022</td>
+              <td>TikTok Views</td>
+              <td>5000</td>
+              <td>৳399.00</td>
+              <td><span class="tag wait">In progress</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
