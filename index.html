@@ -3,560 +3,135 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mijan Services • Social Growth</title>
-  <meta name="description" content="Professional social media services. Simple, fast, secure checkout." />
+  <title>Mijan Panel • Dashboard</title>
+  <meta name="description" content="Dashboard & New Order" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a class="logo" href="index.html">
-        <span class="logo-mark">M</span>
-        <span class="logo-text">Mijan Services</span>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">M</span>
+        <span class="brand-name">mijanpanel.com</span>
       </a>
 
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="menu" id="menu">
-        <a class="active" href="index.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="faq.html">FAQ</a>
-        <a class="pill" href="contact.html">Contact</a>
+      <nav class="nav" id="nav">
+        <a class="active" href="index.html">Dashboard</a>
+        <a href="orders.html">Orders</a>
+        <a href="add-funds.html">Add Funds</a>
+        <a class="pill" href="add-funds.html">Deposit</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div>
-        <div class="tag">Green • Clean • Professional</div>
-        <h1>Services that help your content get noticed.</h1>
-        <p class="sub">
-          Choose a platform, pick a package, and submit your public link.
-          No passwords. Simple checkout. Mobile-friendly.
-        </p>
-
-        <div class="hero-actions">
-          <button class="btn primary" data-open-order data-service="Instagram Followers">Quick Order</button>
-          <a class="btn ghost" href="contact.html">Talk to Support</a>
-        </div>
-
-        <div class="mini-stats">
-          <div class="mini-stat"><b>Fast</b><span>delivery</span></div>
-          <div class="mini-stat"><b>Secure</b><span>checkout</span></div>
-          <div class="mini-stat"><b>24/7</b><span>support</span></div>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="hero-card-top">
-          <div class="hero-card-title">Most Popular</div>
-          <div class="hero-card-badge">Trusted</div>
-        </div>
-
-        <div class="hero-card-grid">
-          <button class="service-chip" data-open-order data-service="Instagram Followers">Instagram • Followers</button>
-          <button class="service-chip" data-open-order data-service="Instagram Likes">Instagram • Likes</button>
-          <button class="service-chip" data-open-order data-service="TikTok Views">TikTok • Views</button>
-          <button class="service-chip" data-open-order data-service="YouTube Views">YouTube • Views</button>
-        </div>
-
-        <p class="small muted">
-          Tip: Long-term growth comes from good content + consistent posting.
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>Instagram</h2>
-        <p class="muted">Pick a package. Edit prices later.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Followers</h3>
-          <p class="muted">For profile social proof.</p>
-          <div class="price"><span>$</span><b>0.39</b><span class="muted">starting</span></div>
-          <ul class="list">
-            <li>Public link only</li>
-            <li>Mobile-friendly</li>
-            <li>Support available</li>
-          </ul>
-          <button class="btn primary full" data-open-order data-service="Instagram Followers">Order</button>
-        </article>
-
-        <article class="card">
-          <h3>Likes</h3>
-          <p class="muted">Boost engagement on posts.</p>
-          <div class="price"><span>$</span><b>0.59</b><span class="muted">starting</span></div>
-          <ul class="list">
-            <li>Works on posts/reels</li>
-            <li>Multiple sizes</li>
-            <li>No password needed</li>
-          </ul>
-          <button class="btn primary full" data-open-order data-service="Instagram Likes">Order</button>
-        </article>
-
-        <article class="card">
-          <h3>Views</h3>
-          <p class="muted">For reels/video reach.</p>
-          <div class="price"><span>$</span><b>0.79</b><span class="muted">starting</span></div>
-          <ul class="list">
-            <li>Fast start</li>
-            <li>Great for testing</li>
-            <li>Simple checkout</li>
-          </ul>
-          <button class="btn primary full" data-open-order data-service="Instagram Views">Order</button>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>TikTok</h2>
-        <p class="muted">Clean packages for creators.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Views</h3>
-          <p class="muted">Push visibility for videos.</p>
-          <div class="price"><span>$</span><b>0.49</b><span class="muted">starting</span></div>
-          <button class="btn primary full" data-open-order data-service="TikTok Views">Order</button>
-        </article>
-
-        <article class="card">
-          <h3>Likes</h3>
-          <p class="muted">Improve engagement ratio.</p>
-          <div class="price"><span>$</span><b>0.69</b><span class="muted">starting</span></div>
-          <button class="btn primary full" data-open-order data-service="TikTok Likes">Order</button>
-        </article>
-
-        <article class="card">
-          <h3>Followers</h3>
-          <p class="muted">Grow profile credibility.</p>
-          <div class="price"><span>$</span><b>0.89</b><span class="muted">starting</span></div>
-          <button class="btn primary full" data-open-order data-service="TikTok Followers">Order</button>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <h2>YouTube</h2>
-        <p class="muted">For channel & video performance.</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Views</h3>
-          <p class="muted">Support videos with more views.</p>
-          <div class="price"><span>$</span><b>0.59</b><span class="muted">starting</span></div>
-          <button class="btn primary full" data-open-order data-service="YouTube Views">Order</button>
-        </article>
-
-        <article class="card">
-          <h3>Likes</h3>
-          <p class="muted">Increase engagement signals.</p>
-          <div class="price"><span>$</span><b>0.79</b><span class="muted">starting</span></div>
-          <button class="btn primary full" data-open-order data-service="YouTube Likes">Order</button>
-        </article>
-
-        <article class="card">
-          <h3>Subscribers</h3>
-          <p class="muted">Grow channel audience.</p>
-          <div class="price"><span>$</span><b>0.99</b><span class="muted">starting</span></div>
-          <button class="btn primary full" data-open-order data-service="YouTube Subscribers">Order</button>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span class="muted">© <span id="year"></span> Mijan Services</span>
-      <div class="footer-links">
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Support</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Order Modal -->
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Order form">
-      <div class="modal-top">
+  <main class="container page">
+    <!-- Profile card -->
+    <section class="card profile">
+      <div class="profile-left">
+        <div class="avatar">M</div>
         <div>
-          <div class="modal-title" id="modalTitle">Order</div>
-          <div class="small muted">Demo form (no payment). You can connect payment later.</div>
-        </div>
-        <button class="x" id="closeModal" aria-label="Close">✕</button>
-      </div>
-
-      <form id="orderForm" class="form">
-        <label>
-          Selected service
-          <input id="serviceName" type="text" readonly />
-        </label>
-
-        <label>
-          Public link (profile/post/video)
-          <input id="orderLink" type="url" placeholder="https://..." required />
-        </label>
-
-        <label>
-          Package size
-          <select id="orderSize">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-          </select>
-        </label>
-
-        <button class="btn primary full" type="submit">Confirm</button>
-        <div class="small muted" id="orderHint"></div>
-      </form>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-            </html>        <a href="#contact">Contact</a>
-        <a class="pill" href="#services">Get Started</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <main id="home" class="container hero">
-    <div class="hero-left">
-      <div class="rating">
-        <span class="stars">★★★★★</span>
-        <span class="muted">Trusted by creators & businesses</span>
-      </div>
-
-      <h1>
-        Grow your social presence with
-        <span class="grad">smart, clean promotion</span>.
-      </h1>
-
-      <p class="lead">
-        Choose a platform, pick a package, and submit your link.
-        Built for speed, simplicity, and mobile-friendly checkout.
-      </p>
-
-      <div class="cta">
-        <a class="btn primary" href="#services">Browse Packages</a>
-        <a class="btn ghost" href="#contact">Talk to support</a>
-      </div>
-
-      <div class="trust-row">
-        <div class="trust">
-          <div class="trust-num">4.9</div>
-          <div class="trust-label">avg rating</div>
-        </div>
-        <div class="trust">
-          <div class="trust-num">10k+</div>
-          <div class="trust-label">orders served</div>
-        </div>
-        <div class="trust">
-          <div class="trust-num">24/7</div>
-          <div class="trust-label">support</div>
+          <div class="profile-name" id="username">mrmijanur33341</div>
+          <div class="muted small">Welcome to mijanpanel.com!</div>
         </div>
       </div>
-    </div>
-
-    <div class="hero-right">
-      <div class="glass-card">
-        <div class="glass-title">Quick Order</div>
-        <div class="tabs" role="tablist" aria-label="Platform tabs">
-          <button class="tab active" data-tab="ig" role="tab" aria-selected="true">Instagram</button>
-          <button class="tab" data-tab="tt" role="tab" aria-selected="false">TikTok</button>
-          <button class="tab" data-tab="yt" role="tab" aria-selected="false">YouTube</button>
-        </div>
-
-        <div class="tab-panels">
-          <div class="panel active" id="ig" role="tabpanel">
-            <div class="grid">
-              <a class="mini-card" href="#services" data-preset="Instagram • Followers">
-                <div class="mini-h">Followers</div>
-                <div class="mini-p">Packages from small to large</div>
-              </a>
-              <a class="mini-card" href="#services" data-preset="Instagram • Likes">
-                <div class="mini-h">Likes</div>
-                <div class="mini-p">Boost engagement on posts</div>
-              </a>
-              <a class="mini-card" href="#services" data-preset="Instagram • Views">
-                <div class="mini-h">Views</div>
-                <div class="mini-p">Video views for reels</div>
-              </a>
-              <a class="mini-card" href="#services" data-preset="Instagram • Comments">
-                <div class="mini-h">Comments</div>
-                <div class="mini-p">Add activity to content</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="panel" id="tt" role="tabpanel">
-            <div class="grid">
-              <a class="mini-card" href="#services" data-preset="TikTok • Followers">
-                <div class="mini-h">Followers</div>
-                <div class="mini-p">Build social proof fast</div>
-              </a>
-              <a class="mini-card" href="#services" data-preset="TikTok • Likes">
-                <div class="mini-h">Likes</div>
-                <div class="mini-p">Improve content traction</div>
-              </a>
-              <a class="mini-card" href="#services" data-preset="TikTok • Views">
-                <div class="mini-h">Views</div>
-                <div class="mini-p">Push videos further</div>
-              </a>
-              <a class="mini-card" href="#contact">
-                <div class="mini-h">Custom</div>
-                <div class="mini-p">Need something special?</div>
-              </a>
-            </div>
-          </div>
-
-          <div class="panel" id="yt" role="tabpanel">
-            <div class="grid">
-              <a class="mini-card" href="#services" data-preset="YouTube • Views">
-                <div class="mini-h">Views</div>
-                <div class="mini-p">Get more watch signals</div>
-              </a>
-              <a class="mini-card" href="#services" data-preset="YouTube • Likes">
-                <div class="mini-h">Likes</div>
-                <div class="mini-p">Increase engagement ratio</div>
-              </a>
-              <a class="mini-card" href="#services" data-preset="YouTube • Subscribers">
-                <div class="mini-h">Subscribers</div>
-                <div class="mini-p">Grow channel audience</div>
-              </a>
-              <a class="mini-card" href="#contact">
-                <div class="mini-h">Consult</div>
-                <div class="mini-p">We’ll recommend a plan</div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="ticker" aria-label="Live activity">
-          <div class="ticker-track" id="tickerTrack"></div>
-        </div>
-
-        <div class="small muted">
-          Tip: Use official promotion & quality content for long-term growth.
-        </div>
+      <div class="profile-right">
+        <span class="status-pill">Online</span>
       </div>
-    </div>
-  </main>
+    </section>
 
-  <!-- Services -->
-  <section id="services" class="container section">
-    <div class="section-head">
-      <h2>Popular Packages</h2>
-      <p class="muted">Edit names & prices to match your service. Buttons are demo checkout.</p>
-    </div>
-
-    <div class="cards">
-      <article class="card">
-        <div class="card-top">
-          <div>
-            <div class="card-title">Instagram Followers</div>
-            <div class="muted small">Starter boost for profiles</div>
-          </div>
-          <span class="badge">Best seller</span>
-        </div>
-        <div class="price">
-          <span class="money">$</span><span class="amount">0.39</span><span class="per">/ starts</span>
-        </div>
-        <ul class="list">
-          <li>Simple link submission</li>
-          <li>Fast delivery window</li>
-          <li>Secure checkout</li>
-        </ul>
-        <button class="btn primary full" data-checkout="Instagram Followers">Buy now</button>
-      </article>
-
-      <article class="card">
-        <div class="card-top">
-          <div>
-            <div class="card-title">Instagram Likes</div>
-            <div class="muted small">For posts & reels engagement</div>
-          </div>
-          <span class="badge ghost">Popular</span>
-        </div>
-        <div class="price">
-          <span class="money">$</span><span class="amount">0.59</span><span class="per">/ starts</span>
-        </div>
-        <ul class="list">
-          <li>Works great on new posts</li>
-          <li>Multiple package sizes</li>
-          <li>Instant support</li>
-        </ul>
-        <button class="btn primary full" data-checkout="Instagram Likes">Buy now</button>
-      </article>
-
-      <article class="card">
-        <div class="card-top">
-          <div>
-            <div class="card-title">TikTok Views</div>
-            <div class="muted small">Push video visibility</div>
-          </div>
-          <span class="badge ghost">NEW</span>
-        </div>
-        <div class="price">
-          <span class="money">$</span><span class="amount">0.79</span><span class="per">/ starts</span>
-        </div>
-        <ul class="list">
-          <li>Quick delivery window</li>
-          <li>Great for testing content</li>
-          <li>Mobile-friendly checkout</li>
-        </ul>
-        <button class="btn primary full" data-checkout="TikTok Views">Buy now</button>
-      </article>
-    </div>
-
-    <div class="note">
-      ⚠️ Important: Don’t promise “guaranteed real users” unless you can truly verify it.
-      Keep messaging honest + compliant.
-    </div>
-  </section>
-
-  <!-- Why us -->
-  <section id="why" class="container section">
-    <div class="section-head">
-      <h2>Why choose us</h2>
-      <p class="muted">Same structure vibe—different wording & original design.</p>
-    </div>
-
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="icon">⚡</div>
-        <h3>Fast delivery</h3>
-        <p class="muted">Most orders start quickly after confirmation. ETA depends on package size.</p>
-      </div>
-      <div class="why-card">
-        <div class="icon">🔒</div>
-        <h3>Secure checkout</h3>
-        <p class="muted">We keep checkout simple. Never ask for passwords.</p>
-      </div>
-      <div class="why-card">
-        <div class="icon">💬</div>
-        <h3>Support that replies</h3>
-        <p class="muted">Questions? We answer. Add your WhatsApp/Email in Contact section.</p>
-      </div>
-      <div class="why-card">
-        <div class="icon">📈</div>
-        <h3>Growth strategy</h3>
-        <p class="muted">We encourage quality content + smart promotion for long-term results.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="container section">
-    <div class="section-head">
-      <h2>FAQ</h2>
-      <p class="muted">You can edit questions anytime.</p>
-    </div>
-
-    <div class="faq">
-      <details>
-        <summary>How do I place an order?</summary>
-        <div class="muted">Pick a package → click Buy now → enter your public link → confirm.</div>
-      </details>
-      <details>
-        <summary>Do you need my password?</summary>
-        <div class="muted">No. Never share passwords. Only a public profile/post/video link.</div>
-      </details>
-      <details>
-        <summary>How fast is delivery?</summary>
-        <div class="muted">Depends on package size. Small orders typically begin faster.</div>
-      </details>
-      <details>
-        <summary>Can I get a refund?</summary>
-        <div class="muted">Add your real policy here (refund, replace, partial, etc.).</div>
-      </details>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="container section">
-    <div class="section-head">
-      <h2>Contact</h2>
-      <p class="muted">Connect your email/WhatsApp. Form opens email app (no backend).</p>
-    </div>
-
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>Send a message</h3>
-        <form id="contactForm" class="form">
-          <label>
-            Name
-            <input id="name" type="text" placeholder="Your name" required />
-          </label>
-          <label>
-            Message
-            <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
-          </label>
-          <button class="btn primary full" type="submit">Send</button>
-          <div class="muted small">No server needed. This opens your email app.</div>
-        </form>
-      </div>
-
-      <div class="contact-card">
-        <h3>Quick links</h3>
-        <a class="link" href="#" target="_blank" rel="noreferrer">WhatsApp</a>
-        <a class="link" href="#" target="_blank" rel="noreferrer">Facebook Page</a>
-        <a class="link" href="#" target="_blank" rel="noreferrer">Support Email</a>
-
-        <div class="brand-box">
-          <div class="brand-box-title">mijan.bro.bd</div>
-          <div class="muted small">Built on GitHub Pages</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span class="muted">© <span id="year"></span> Mijan Growth</span>
-      <a class="backtop" href="#home">Back to top ↑</a>
-    </div>
-  </footer>
-
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Checkout">
-      <div class="modal-top">
+    <!-- Stats -->
+    <section class="stats">
+      <div class="stat card">
+        <div class="stat-icon">✅</div>
         <div>
-          <div class="modal-title" id="modalTitle">Checkout</div>
-          <div class="muted small">Demo checkout (no payment).</div>
+          <div class="stat-num" id="completedOrders">36116</div>
+          <div class="muted small">Completed orders</div>
         </div>
-        <button class="x" id="closeModal" aria-label="Close">✕</button>
       </div>
 
-      <form id="checkoutForm" class="form">
-        <label>
-          Link (profile/post/video)
-          <input id="orderLink" type="url" placeholder="https://..." required />
-        </label>
-        <label>
-          Package size
-          <select id="orderSize">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-          </select>
-        </label>
-        <button class="btn primary full" type="submit">Confirm order</button>
-        <div class="muted small" id="orderHint"></div>
-      </form>
-    </div>
-  </div>
+      <div class="stat card">
+        <div class="stat-icon">৳</div>
+        <div>
+          <div class="stat-num" id="accountBalance">0.00</div>
+          <div class="muted small">Account balance</div>
+        </div>
+      </div>
+
+      <div class="stat card">
+        <div class="stat-icon">৳</div>
+        <div>
+          <div class="stat-num" id="spentBalance">0.00</div>
+          <div class="muted small">Spent balance</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Order -->
+    <section class="card order">
+      <div class="order-head">
+        <h2>New Order</h2>
+        <p class="muted small">Select category → service → enter link → quantity → place order.</p>
+      </div>
+
+      <div class="order-grid">
+        <div class="field full">
+          <label>Search services</label>
+          <input id="search" type="text" placeholder="Search Services..." />
+        </div>
+
+        <div class="field full">
+          <label>Category</label>
+          <select id="category"></select>
+        </div>
+
+        <div class="field full">
+          <label>Services</label>
+          <select id="service"></select>
+        </div>
+
+        <div class="field">
+          <label>Average Time</label>
+          <input id="avgTime" type="text" value="—" readonly />
+        </div>
+
+        <div class="field">
+          <label>Rate (per 1000)</label>
+          <input id="rate" type="text" value="—" readonly />
+        </div>
+
+        <div class="field full">
+          <label>Link</label>
+          <input id="link" type="url" placeholder="https://instagram.com/..." required />
+          <div class="hint">We never ask for password. Public link only.</div>
+        </div>
+
+        <div class="field">
+          <label>Quantity</label>
+          <input id="qty" type="number" min="1" step="1" placeholder="e.g. 1000" required />
+          <div class="hint" id="minmax">Min: — • Max: —</div>
+        </div>
+
+        <div class="field">
+          <label>Charge</label>
+          <input id="charge" type="text" value="৳0.00" readonly />
+          <div class="hint">Auto calculated</div>
+        </div>
+
+        <div class="field full">
+          <button class="btn primary" id="placeOrder">Place Order</button>
+          <div class="small muted" id="orderMsg"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp floating button (optional) -->
+    <a class="wa" href="contact.html" aria-label="WhatsApp">💬</a>
+  </main>
 
   <script src="script.js"></script>
 </body>
