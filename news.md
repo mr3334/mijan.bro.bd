@@ -1,13 +1,10 @@
+
 ---
 layout: page
 title: News & Bookmarks
 permalink: /news/
 ---
 
-## My saved links
-
-- Tech: Example link
-- Tutorials: Example link
-- Inspiration: Example link
-
-> Tip: যেকোনো সময় নতুন লিংক add করলেই update হবে।
+- Example bookmark 1
+- Example bookmark 2
+- Example bookmark 3

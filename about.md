@@ -1,12 +1,13 @@
+
 ---
 layout: page
 title: About
 permalink: /about/
 ---
 
-Hi, I’m **Mijan**.  
-This is my personal blog where I store my photos, memories, and useful links.
+Hi, I'm **Mijan**.
 
-- 📸 Photo memories
-- ✍️ Blog posts
-- 🔖 News & bookmarks
+This is my personal blog where I store:
+- 📸 Photos
+- ✍️ Memories
+- 🔖 Bookmarks
