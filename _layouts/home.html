@@ -1,0 +1,66 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero-left">
+    <div class="badge">🌿 Green • clean • personal</div>
+    <h1>{{ site.title }}</h1>
+    <p class="lead">{{ site.description }}</p>
+
+    <div class="hero-actions">
+      <a class="btn primary" href="{{ '/search/' | relative_url }}">Search posts</a>
+      <a class="btn ghost" href="{{ '/gallery/' | relative_url }}">Open gallery</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>{{ site.posts | size }}</b><span class="muted">Posts</span></div>
+      <div class="stat"><b>Photos</b><span class="muted">Memories</span></div>
+      <div class="stat"><b>Links</b><span class="muted">Bookmarks</span></div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="cover-card">
+      <img class="cover" src="{{ '/assets/img/cover.jpg' | relative_url }}" alt="Cover">
+      <div class="cover-text">
+        <div class="cover-title">Featured memory</div>
+        <div class="muted small">Replace cover.jpg anytime</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Latest posts</h2>
+    <p class="muted">Clean cards, fast reading.</p>
+  </div>
+
+  <div class="grid">
+    {% for post in site.posts limit: 9 %}
+      <a class="post-card" href="{{ post.url | relative_url }}">
+        {% if post.cover %}
+          <img class="post-thumb" src="{{ post.cover | relative_url }}" alt="">
+        {% else %}
+          <div class="post-thumb placeholder">✍️</div>
+        {% endif %}
+        <div class="post-body">
+          <div class="post-title">{{ post.title }}</div>
+          <div class="post-meta">
+            <span>{{ post.date | date: "%b %d, %Y" }}</span>
+            <span>•</span>
+            <span>{{ post.content | number_of_words | divided_by: 180 | plus: 1 }} min read</span>
+          </div>
+          <div class="post-excerpt muted">{{ post.excerpt | strip_html | truncate: 120 }}</div>
+          {% if post.tags %}
+            <div class="chips">
+              {% for t in post.tags limit: 3 %}
+                <span class="chip">{{ t }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>

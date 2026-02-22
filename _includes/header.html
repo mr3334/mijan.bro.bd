@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark">M</span>
+      <span class="brand-text">
+        <b>{{ site.title }}</b>
+        <span class="muted small">Personal space</span>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      {% for item in site.nav %}
+        <a href="{{ item.link | relative_url }}" class="{% if page.url == item.link %}active{% endif %}">{{ item.name }}</a>
+      {% endfor %}
+      <button class="pill" id="themeBtn" type="button" aria-label="Toggle theme">☾</button>
+    </nav>
+  </div>
+</header>
