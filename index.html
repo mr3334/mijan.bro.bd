@@ -1,51 +1,419 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Extraordinary Pro</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Its MIJAN</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0b0b14" />
 </head>
 <body>
-
-<header>
-  <div class="logo">EXTRA<span>ORDINARY</span></div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Not Just Clean.<br>Pure Professional Power.</h1>
-  <p>Designed to dominate. Crafted to impress. Built for the future.</p>
-  <button>Explore Now</button>
-</section>
-
-<section class="cards">
-  <div class="card">
-    <h2>Innovation</h2>
-    <p>Cutting-edge modern layout with bold visual identity.</p>
+  <!-- Ambient -->
+  <div class="ambient">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="grain"></div>
   </div>
-  <div class="card">
-    <h2>Performance</h2>
-    <p>Lightning fast, responsive, and fully optimized.</p>
-  </div>
-  <div class="card">
-    <h2>Premium</h2>
-    <p>Luxury aesthetics with next-level design language.</p>
-  </div>
-</section>
 
-<footer>
-  <p>© 2026 Extraordinary Pro. All rights reserved.</p>
-</footer>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Its MIJAN home">
+        <span class="brand__mark">MIJAN</span>
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__tag">Premium Portfolio</span>
+      </a>
 
-<script src="script.js"></script>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" hidden>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <div class="badge">
+            <span class="pulse"></span>
+            Available for projects • 2026
+          </div>
+
+          <h1 class="hero__title">
+            Its <span class="grad">MIJAN</span> —
+            <br />
+            Design that looks <span class="underline">expensive</span>.
+          </h1>
+
+          <p class="hero__subtitle">
+            A charming, clean, professional website template with extraordinary polish.
+            Built to convert visitors into customers — fast, modern, and responsive.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#work">
+              View Work
+              <span class="btn__icon" aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Get a Quote</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">+150%</div>
+              <div class="stat__label">Modern Look</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">&lt;1s</div>
+              <div class="stat__label">Perceived Speed</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">A+</div>
+              <div class="stat__label">Brand Feel</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__right">
+          <div class="showcase">
+            <div class="showcase__top">
+              <div class="dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="chip">Its MIJAN</div>
+            </div>
+
+            <div class="showcase__mid">
+              <div class="metric">
+                <div class="metric__k">Conversion</div>
+                <div class="metric__v">3.8x</div>
+              </div>
+              <div class="metric">
+                <div class="metric__k">UX Score</div>
+                <div class="metric__v">98</div>
+              </div>
+              <div class="metric">
+                <div class="metric__k">Delivery</div>
+                <div class="metric__v">Fast</div>
+              </div>
+            </div>
+
+            <div class="showcase__bottom">
+              <div class="miniCard">
+                <div class="miniCard__icon">✦</div>
+                <div>
+                  <div class="miniCard__t">Premium UI</div>
+                  <div class="miniCard__s">Glass • Motion • Depth</div>
+                </div>
+              </div>
+              <div class="miniCard">
+                <div class="miniCard__icon">⚡</div>
+                <div>
+                  <div class="miniCard__t">Optimized</div>
+                  <div class="miniCard__s">Responsive • SEO</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="floatingTag ft1">No green. Just glow.</div>
+            <div class="floatingTag ft2">Charming + Pro</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__logos" aria-label="Trusted by">
+        <p class="hero__logosTitle">Style that fits:</p>
+        <div class="logos">
+          <span>Portfolio</span>
+          <span>Agency</span>
+          <span>Startup</span>
+          <span>Creator</span>
+          <span>Business</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>About MIJAN</h2>
+          <p>
+            This homepage is designed to feel premium without being noisy.
+            Elegant spacing, strong typography, and subtle motion — built for real-world clients.
+          </p>
+        </div>
+
+        <div class="aboutGrid">
+          <div class="aboutCard">
+            <h3>Signature Style</h3>
+            <p>Dark luxury aesthetic, soft gradients, and glass depth — professional, charming, extraordinary.</p>
+            <ul class="list">
+              <li>Clean layout system</li>
+              <li>Micro-interactions</li>
+              <li>Modern sections ready</li>
+            </ul>
+          </div>
+
+          <div class="aboutCard">
+            <h3>What I Build</h3>
+            <p>Landing pages, portfolios, business websites, and product showcases that look premium.</p>
+            <div class="pills">
+              <span>Landing Page</span>
+              <span>Portfolio</span>
+              <span>Business</span>
+              <span>Brand Kit</span>
+              <span>UI System</span>
+            </div>
+          </div>
+
+          <div class="aboutCard">
+            <h3>Why It Converts</h3>
+            <p>Clear CTAs, trust blocks, and real content structure — not empty sections.</p>
+            <div class="progress">
+              <div class="progress__row"><span>Clarity</span><span>92%</span></div>
+              <div class="bar"><i style="width:92%"></i></div>
+              <div class="progress__row"><span>Trust</span><span>88%</span></div>
+              <div class="bar"><i style="width:88%"></i></div>
+              <div class="progress__row"><span>Beauty</span><span>96%</span></div>
+              <div class="bar"><i style="width:96%"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services</h2>
+          <p>Everything you need to launch a premium web presence.</p>
+        </div>
+
+        <div class="cards3">
+          <article class="service">
+            <div class="service__icon">◆</div>
+            <h3>Premium Landing Page</h3>
+            <p>High-converting hero, sections, CTA flow, and modern design.</p>
+            <div class="service__meta">
+              <span>Fast delivery</span><span>Mobile-first</span><span>SEO-ready</span>
+            </div>
+          </article>
+          <article class="service">
+            <div class="service__icon">◈</div>
+            <h3>Business Website</h3>
+            <p>Multi-section professional site with trust, reviews, and contact funnel.</p>
+            <div class="service__meta">
+              <span>Branding</span><span>Copy layout</span><span>Modern UI</span>
+            </div>
+          </article>
+          <article class="service">
+            <div class="service__icon">✦</div>
+            <h3>UI Polish Upgrade</h3>
+            <p>Turn an “okay” site into a premium experience with motion + spacing + style.</p>
+            <div class="service__meta">
+              <span>Micro motion</span><span>Better typography</span><span>Cleaner grid</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__head">
+          <h2>Selected Work</h2>
+          <p>Three example project cards (replace text/images later).</p>
+        </div>
+
+        <div class="workGrid">
+          <a class="workCard" href="#contact">
+            <div class="workCard__top">
+              <div class="workCard__badge">Landing</div>
+              <div class="workCard__year">2026</div>
+            </div>
+            <h3>Neon Studio</h3>
+            <p>Luxury dark landing page with clear CTA flow and trust blocks.</p>
+            <div class="workCard__tags">
+              <span>Hero</span><span>CTA</span><span>Glass</span>
+            </div>
+          </a>
+
+          <a class="workCard" href="#contact">
+            <div class="workCard__top">
+              <div class="workCard__badge">Business</div>
+              <div class="workCard__year">2026</div>
+            </div>
+            <h3>Prime Agency</h3>
+            <p>Professional service site with testimonials and clean sections.</p>
+            <div class="workCard__tags">
+              <span>Services</span><span>Reviews</span><span>Contact</span>
+            </div>
+          </a>
+
+          <a class="workCard" href="#contact">
+            <div class="workCard__top">
+              <div class="workCard__badge">Portfolio</div>
+              <div class="workCard__year">2026</div>
+            </div>
+            <h3>Creator Kit</h3>
+            <p>Charming portfolio design with bold typography and smooth motion.</p>
+            <div class="workCard__tags">
+              <span>Typography</span><span>Motion</span><span>Grid</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section__head">
+          <h2>Client Reviews</h2>
+          <p>Realistic review layout (you can replace names later).</p>
+        </div>
+
+        <div class="quotes">
+          <figure class="quote">
+            <blockquote>
+              “Looks premium and loads fast. The design feels expensive without being heavy.”
+            </blockquote>
+            <figcaption>— A. Rahman, Small Business</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>
+              “Exactly the vibe I wanted: professional, charming, and modern.”
+            </blockquote>
+            <figcaption>— S. Ahmed, Creator</figcaption>
+          </figure>
+          <figure class="quote">
+            <blockquote>
+              “Clean structure, strong CTA, and great section spacing. Super impressive.”
+            </blockquote>
+            <figcaption>— M. Hasan, Agency</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p>Send a message — the form is front-end only (you can connect it later).</p>
+        </div>
+
+        <div class="contactGrid">
+          <div class="contactCard">
+            <h3>Let’s build something premium.</h3>
+            <p>
+              Tell me what you need: landing page, business website, portfolio, or redesign.
+              I’ll reply with a plan + price.
+            </p>
+
+            <div class="contactInfo">
+              <div class="infoRow">
+                <span class="infoKey">Response</span>
+                <span class="infoVal">Within 24h</span>
+              </div>
+              <div class="infoRow">
+                <span class="infoKey">Delivery</span>
+                <span class="infoVal">Fast & polished</span>
+              </div>
+              <div class="infoRow">
+                <span class="infoKey">Quality</span>
+                <span class="infoVal">Premium UI</span>
+              </div>
+            </div>
+
+            <a class="btn btn--primary btn--full" href="#top">Back to Top ↑</a>
+          </div>
+
+          <form class="form" onsubmit="return window.MIJAN_submit(event)">
+            <div class="formRow">
+              <label>Name</label>
+              <input required placeholder="Your name" />
+            </div>
+            <div class="formRow">
+              <label>Email</label>
+              <input type="email" required placeholder="you@example.com" />
+            </div>
+            <div class="formRow">
+              <label>Project</label>
+              <select required>
+                <option value="" selected disabled>Select one</option>
+                <option>Landing Page</option>
+                <option>Business Website</option>
+                <option>Portfolio</option>
+                <option>Redesign / UI Polish</option>
+              </select>
+            </div>
+            <div class="formRow">
+              <label>Message</label>
+              <textarea required rows="5" placeholder="Describe what you want..."></textarea>
+            </div>
+
+            <button class="btn btn--ghost btn--full" type="submit">
+              Send Message
+              <span class="btn__icon" aria-hidden="true">✉</span>
+            </button>
+
+            <p class="formHint">
+              Tip: Later you can connect this form to EmailJS / Formspree / backend.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="footer__brand">Its <span class="grad">MIJAN</span></div>
+        <p>Charming • Professional • Extraordinary</p>
+      </div>
+      <div class="footer__right">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Its MIJAN. All rights reserved.</p>
+      <p class="tiny">Built with clean HTML/CSS/JS — no frameworks.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
